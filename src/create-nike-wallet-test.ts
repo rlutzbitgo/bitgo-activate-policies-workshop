@@ -13,7 +13,6 @@ async function createWallet(params: BasePrompt & CreateWalletPrompt) {
 		label:  params.label ? params.label : "Hello Activate " + new Date().toString(),
 		passphrase: params.loginPassword,
 		multisigType: 'tss',
-		backupProvider: "BitGoKRS",
 		walletVersion: 3,
 	});
 	console.log(res);

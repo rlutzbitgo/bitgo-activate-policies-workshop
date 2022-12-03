@@ -5,14 +5,14 @@ const bitgo = new BitGo({ env: "prod" });
 
 
 async function createWallet(params: BasePrompt & CreateWalletPrompt) {
-	const bitgoCoin = bitgo.coin('tpolygon');
+	const bitgoCoin = bitgo.coin('polygon');
 	console.log("\n\ncreating wallet, this might take a few seconds....");
-	await bitgo.unlock({ otp: "000000" });
 	const res = await bitgoCoin.wallets().generateWallet({
 		enterprise: params.enterpriseId,
+		passphrase: 'Abcd@3478q72fgquguygewuf7wq2tr26rt',
 		label:  params.label ? params.label : "Hello Activate " + new Date().toString(),
 		multisigType: 'tss',
-		backupProvider: "BitGoKRS",
+		// backupProvider: "BitGoKRS",
 		walletVersion: 3,
 	});
 	console.log(res);
