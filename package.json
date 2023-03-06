@@ -6,7 +6,7 @@
   "author": "Zahin Mohammad <zahinmohammad@bitgo.com>",
   "license": "MIT",
   "dependencies": {
-    "@bitgo-beta/bitgo": "14.2.1-beta.143",
+    "@bitgo-beta/bitgo": "14.2.1-beta.157",
     "inquirer": "^8.0.0",
     "node-fetch": "2",
     "openpgp": "^5.5.0",
@@ -21,7 +21,8 @@
     "policy-exercise": "ts-node ./src/manage-policy.ts",
     "create-nike-wallet-test": "ts-node ./src/create-nike-wallet-test.ts",
     "create-nike-wallet-prod": "ts-node ./src/create-nike-wallet-prod.ts",
-    "create-tss-keychain": "ts-node ./src/create-tss-keychain.ts"
+    "create-tss-keychain": "ts-node ./src/create-tss-keychain.ts",
+    "makeBackupKeychain": "ts-node ./src/keyshares/makeBackupKeychain.ts"
   },
   "devDependencies": {
     "@types/node": "^18.11.3",
