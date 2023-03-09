@@ -6,7 +6,7 @@
   "author": "Zahin Mohammad <zahinmohammad@bitgo.com>",
   "license": "MIT",
   "dependencies": {
-    "@bitgo-beta/bitgo": "14.2.1-beta.157",
+    "@bitgo-beta/bitgo": "14.2.1-beta.160",
     "inquirer": "^8.0.0",
     "node-fetch": "2",
     "openpgp": "^5.5.0",

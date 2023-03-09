@@ -77,6 +77,7 @@ async function main() {
 	const combinedKeyCommonKeychain = combinedKey.xShare.y + combinedKey.xShare.chaincode;
 	console.log("commonkeychain " + combinedKeyCommonKeychain);
 	assert(combinedKeyCommonKeychain === commonKeychain);
+	console.log(`combined: ${JSON.stringify(combinedKey)}`);
 
 	console.log("done");
 	// find *-to-backup shares in the BackupKey collection in mongodb
